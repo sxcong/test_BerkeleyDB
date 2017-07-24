@@ -37,6 +37,5 @@ int CDBMgr::putBlob(const char* key, const unsigned char* data, int len)
 }
 
 主要区别应该就是二进制多了个长度吧。
-简单做了封装，代码在:https://github.com/sxcong/test_BerkeleyDB
-VC2010工程，把代码放到vc2008或以上版本应该都可以。
+代码中是VC2010工程，把代码放到vc2008或以上版本应该都可以。
 可能会碰到一个问题，提示某个宏已经定义，我这边的方案是修改系统文件的宏，不要改bdb .h的，除非自己重编译。
